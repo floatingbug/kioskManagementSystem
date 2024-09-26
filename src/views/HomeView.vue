@@ -4,5 +4,5 @@
 <template>
 	<header></header>
 	<main></main>
-	<footer></footer>
+	<footer>footer</footer>
 </template>
