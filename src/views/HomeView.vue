@@ -2,7 +2,9 @@
 </script>
 
 <template>
-	<header></header>
+	<header>
+		<h1>Kiosk Management System</h1>
+	</header>
 	<main></main>
 	<footer>footer</footer>
 </template>
