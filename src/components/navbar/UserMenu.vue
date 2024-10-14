@@ -1,8 +1,10 @@
 <script setup>
 import { ref } from "vue";
+import {useRouter} from "vue-router";
 import Menu from 'primevue/menu';
 import {userStore} from "../../store/store.js";
 
+const router = useRouter();
 const menu = ref();
 const items = ref([
     {
@@ -28,6 +30,7 @@ const toggle = (event) => {
 function signOut(){
 	localStorage.setItem("token", "");
 	userStore.isSignedIn = false;
+	router.push("/");
 }
 </script>
 
