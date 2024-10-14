@@ -11,7 +11,8 @@ import semantic from "./theme/semantic.js";
 import components from "./theme/components.js";
 import Button from "primevue/button";
 
-const SERVER_URL = "http://localhost:3000"
+//const SERVER_URL = "http://localhost:3000"
+const SERVER_URL = "http://194.195.241.51:3301"
 
 const app = createApp(App);
 

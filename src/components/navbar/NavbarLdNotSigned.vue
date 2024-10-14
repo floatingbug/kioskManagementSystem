@@ -1,4 +1,5 @@
 <script setup>
+import ThemeToggle from "./ThemeToggle.vue";
 </script>
 
 
@@ -12,6 +13,8 @@
 		</div>
 
 		<div class="right">
+			<ThemeToggle />
+			
 			<div class="sign-container">
 				<Button as="router-link" to="/sign-in" label="Sign in" link />
 				<Button as="router-link" to="/sign-up" label="Sign up" link />
@@ -34,5 +37,9 @@
 
 .left .p-button {
 	text-decoration: none;
+}
+
+.right {
+	display: flex;
 }
 </style>
