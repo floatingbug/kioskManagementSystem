@@ -54,7 +54,7 @@ async function signIn(){
 			<ProgressSpinner v-if="isInProgress" />
 
 			<header>
-				<h1>Sign up</h1>
+				<h1>Sign in</h1>
 			</header>
 
 			<main>

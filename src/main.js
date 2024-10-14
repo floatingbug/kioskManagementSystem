@@ -5,20 +5,30 @@ import { createApp, provide } from 'vue'
 import App from './App.vue'
 import router from './router'
 import PrimeVue from "primevue/config";
-import Nora from "@primevue/themes/nora";
+import Aura from "@primevue/themes/aura";
 import {definePreset} from "@primevue/themes";
+import semantic from "./theme/semantic.js";
+import components from "./theme/components.js";
 import Button from "primevue/button";
 
 const SERVER_URL = "http://localhost:3000"
 
 const app = createApp(App);
 
+const MyPreset = definePreset(Aura, {
+	semantic,
+	components,
+});
+
 app.use(router)
 
 app.use(PrimeVue, {
     theme: {
-        preset: Nora
-    }
+        preset: MyPreset, 
+		options: {
+			darkModeSelector: ".dark-mode"
+		}
+    },
 });
 
 app.component("Button", Button);
