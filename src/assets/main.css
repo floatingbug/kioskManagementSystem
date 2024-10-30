@@ -25,6 +25,7 @@
 .card-glass {
 	padding: 2rem;
 	border-radius: 8px;
+	border: 1px solid var(--border-color);
 	background-color: rgb(from var(--card-bg-color) r g b / 50%);
 	backdrop-filter: blur(20px);
 }

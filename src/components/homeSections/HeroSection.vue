@@ -36,7 +36,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
 }
 
 header h1 {
@@ -50,6 +50,7 @@ main {
 	min-height: 300px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	color: var(--p-text-muted-color);
 }

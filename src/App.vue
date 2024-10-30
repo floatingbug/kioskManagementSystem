@@ -3,6 +3,7 @@ import {onMounted} from "vue";
 import { RouterLink, RouterView } from 'vue-router'
 import Navbar from "./components/navbar/Navbar.vue";
 import {userStore} from "./store/store.js";
+import Toast from "primevue/toast";
 
 onMounted(() => {
 	userStore.isSignedIn = localStorage.getItem("token") ? true : false;
@@ -14,6 +15,7 @@ onMounted(() => {
 
 <template>
 	<Navbar />
+	<Toast />
 	
   <RouterView />
 </template>

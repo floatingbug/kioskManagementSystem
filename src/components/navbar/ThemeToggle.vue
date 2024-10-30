@@ -21,7 +21,7 @@ function changeTheme(){
     <div class="card flex justify-center">
         <ToggleSwitch v-model="checked" @change="changeTheme" >
             <template #handle="{ checked }">
-                <i :class="['!text-xs pi', { 'pi-check': checked, 'pi-times': !checked }]"></i>
+                <i :class="['!text-xs pi', { 'pi-moon': checked, 'pi-sun': !checked }]"></i>
             </template>
         </ToggleSwitch>
     </div>

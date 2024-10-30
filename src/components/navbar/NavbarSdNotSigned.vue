@@ -57,7 +57,7 @@ function closeNavbar(e){
 	height: 30%;
 	display: flex;
 	justify-content: center;
-	align-items: flex-end;
+	align-items: center;
 }
 
 .top h1 {
@@ -76,6 +76,9 @@ function closeNavbar(e){
 	width: 75%;
 	height: 32px;
 	max-width: 400px;
+}
+
+.p-button {
 	text-decoration: none;
 }
 

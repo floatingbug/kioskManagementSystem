@@ -6,7 +6,7 @@ import InputGroupAddon from 'primevue/inputgroupaddon';
 import FloatLabel from 'primevue/floatlabel';
 import InputText from 'primevue/inputtext';
 import {userStore} from "../store/store.js";
-import ProgressSpinner from "../components/ProgressSpinner.vue";
+import ProgressSpinner from "../components/utils/ProgressSpinner.vue";
 
 const SERVER_URL = inject("SERVER_URL");
 const router = useRouter();

@@ -4,6 +4,7 @@ import 'primeicons/primeicons.css'
 import { createApp, provide } from 'vue'
 import App from './App.vue'
 import router from './router'
+import ToastService from "primevue/toastservice";
 import PrimeVue from "primevue/config";
 import Aura from "@primevue/themes/aura";
 import {definePreset} from "@primevue/themes";
@@ -11,8 +12,8 @@ import semantic from "./theme/semantic.js";
 import components from "./theme/components.js";
 import Button from "primevue/button";
 
-//const SERVER_URL = "http://localhost:3000"
-const SERVER_URL = "http://194.195.241.51:3301"
+const SERVER_URL = "http://localhost:3000"
+//const SERVER_URL = "http://194.195.241.51:3301"
 
 const app = createApp(App);
 
@@ -31,6 +32,7 @@ app.use(PrimeVue, {
 		}
     },
 });
+app.use(ToastService);
 
 app.component("Button", Button);
 

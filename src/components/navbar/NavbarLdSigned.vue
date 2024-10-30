@@ -36,7 +36,7 @@ import UserMenu from "./UserMenu.vue";
 	background-color: var(--navbar-bg-color);
 }
 
-.left .p-button {
+.p-button {
 	text-decoration: none;
 }
 
